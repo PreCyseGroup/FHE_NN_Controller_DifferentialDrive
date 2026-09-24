@@ -14,7 +14,7 @@ The framework is implemented in Webots using a client-server architecture and is
 
 The experiments examine both trajectory-tracking performance and the computational cost of encrypted inference.
 
-<img width="1461" height="815" alt="architecture" src="https://github.com/user-attachments/assets/9c3fdfb8-1336-4e8d-9e12-5b6a48c9b4d8" />
+<img width="1947" height="1087" alt="architecture_new" src="https://github.com/user-attachments/assets/d14f8283-6bbb-4074-8ceb-e24a11e12878" />
 
 *System architecture of the proposed encrypted cloud-based neural controller.*
 
