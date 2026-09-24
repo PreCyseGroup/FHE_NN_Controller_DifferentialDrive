@@ -241,13 +241,7 @@ def main():
             x = float(trajectory["x"][k0] + rng.uniform(-POS_PERTURB, POS_PERTURB))
             y = float(trajectory["y"][k0] + rng.uniform(-POS_PERTURB, POS_PERTURB))
             theta = float(trajectory["theta"][k0] + rng.uniform(-HEADING_PERTURB, HEADING_PERTURB))
-            robot_v = float(
-                np.clip(
-                    trajectory["speed"][k0] + rng.uniform(-V_PERTURB, V_PERTURB),
-                    0.0,
-                    WHEEL_RADIUS * WHEEL_SPEED_LIMIT,
-                )
-            )
+            robot_v = 0.0
 
             translation.setSFVec3f([x, y, z0])
             rotation.setSFRotation([0.0, 0.0, 1.0, theta % (2.0 * np.pi)])
